@@ -20,7 +20,7 @@ else
 endif
 
 function! ctrlp#z#init()
-  let ans = input('args: ')
+  let ans = input('z: ')
   let cmd = 'fasd -d -l -e printf '. ans
   let pathes = split(system(cmd),"\n")
   return pathes
