@@ -22,7 +22,7 @@ endif
 function! ctrlp#z#init()
   let ans = input('args: ')
   let cmd = 'fasd -d -l -e printf '. ans
-  let pathes = split(system(cmd),"\n")[1:]
+  let pathes = split(system(cmd),"\n")
   return pathes
 endfunc
 
